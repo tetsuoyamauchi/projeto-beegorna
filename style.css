@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #F7E6C0;
+    border-bottom: 2px solid #6F4F28;
+    border-radius: 8px;
+    transition: top 0.3s;
+    z-index: 1000; 
+}
+
+.hidden {
+    top: -100px; 
+}
+
+.logo-desenho{
+    width: 60px;
+    height: 60px;
+    margin-right: 35px;
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    position: relative;
+    right: 6%;
+    top: 50%;
+    color: #6F4F28
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    padding-top: 30px;
+}
+
+section{
+    width: 1600px;
+    margin-bottom: 50px;
+}
+
+li{
+    list-style-type:none;
+}
+
+nav ul li a {
+    color: #6F4F28; 
+    font-weight: bold;
+    list-style-type:none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #F5C300;
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+a:hover {
+    color: #B0D6A2; 
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.section-capa {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%;
+}
+
+.img-container {
+    max-width: 100%; 
+    text-align: center; 
+}
+  
+.img-container img {
+    width: 100%; 
+    height: auto; 
+}  
+
+.carrossel-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing:border-box;
+    
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: #6F4F28
+}
+
+.produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 320px;
+    height: 530px;
+    border: 1px solid #F5C300;
+}
+
+.produto img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 400px;
+    transition: transform 0.3s ease;
+}
+
+.produto img:hover {
+    transform: scale(1.05); 
+  }
+
+.button{
+    padding: 10px;
+    margin-left: 5px;
+    background-color: #F5C300;
+    color: white;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+
+.button:hover {
+    background-color: #D4A000;
+    color:white;
+}
+
+.grid-container{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 20px;
+   padding: 20px;
+}
+
+
+
+.produtos-grid {
+    background-color: #FFFFFF; 
+    border: 1px solid #F5C300; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    width: 300px; 
+    height: 450px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.produtos-grid img {
+    width: 100%; /* Imagem preenche a largura do card */
+    height: 320px; /* Altura fixa para a imagem */
+    object-fit: cover; /* Mantém a proporção e cobre o contêiner */
+    object-position: center;
+}
+
+.produtos-grid h3 {
+    margin: 15px 0 5px; /* Margem para o título */
+    color: #6F4F28; 
+}
+
+.produtos-grid p {
+    margin: 5px 0; 
+    color: #333; 
+    font-size: 18px; 
+    font-weight: bold; 
+}
+
+.btn-comprar {
+    background-color: #F5C300; 
+    color: #FFFFFF; 
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center; 
+}
+
+.btn-comprar:hover {
+    background-color: #D4A000; 
+}
+
+.sobre-nos{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: white;
+    justify-content: space-between;
+}
+
+.sobre-nos-container{
+    background-color: black;
+    text-align: center;
+}
+
+.sobre-nos-container p{
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.sobre-nos-container h3{
+    padding: 20px;
+    color: white; 
+    font-size: 30px;
+}
+
